@@ -1,0 +1,60 @@
+.mobile-fixed-panel {
+  display: none;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: $white;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    padding: $gap $col-padding 15px;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: $col-padding;
+    margin-bottom: $col-padding;
+
+    .btn {
+      height: auto;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: $col-padding;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-link {
+      color: $blue-dark;
+      text-align: left;
+      padding: 0;
+      flex-shrink: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    a {
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      color: $blue-dark;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      strong {
+        display: block;
+        font-size: 16px;
+        text-transform: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$height: 44px;
+
+.btn {
+  height: $height;
+  border: 0;
+  outline: none;
+  padding: 0 $gap;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: $border-radius;
+  @include transition(background-color);
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &-primary {
+    background-color: $blue-dark;
+    
+
+    &:hover {
+      background-color: lighten($blue-dark, 10);
+    }
+  }
+
+  &-success {
+    background-color: $green;
+
+    &:hover {
+      background-color: lighten($green, 5);
+    }
+  }
+
+  &-outline-primary {
+    border: 1px solid $border-color;
+    color: $blue-dark;
+
+    &:hover {
+      background-color: $border-color;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

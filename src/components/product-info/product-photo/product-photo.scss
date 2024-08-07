@@ -1,0 +1,15 @@
+.product-photo {
+  img {
+    display: block;
+    width: auto;
+    height: 454px;
+
+    @media screen and (max-width: $tablet) {
+      height: auto;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 404px;
+    }
+  }
+}

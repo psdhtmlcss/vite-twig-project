@@ -1,0 +1,47 @@
+.page {
+  height: 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bg-color;
+    color: $blue-dark;
+
+    @media screen and (max-width: $mobile) {
+      padding-top: 50px;
+    }
+  }
+
+  &__content {
+    flex-shrink: 0;
+    padding: $gap 0;
+    
+  &>.container {
+      display: flex;
+      gap: $gap;
+    }
+  }
+
+  &__aside {
+    width: $aside-width;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $pc) {
+      display: none;
+    }
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+}

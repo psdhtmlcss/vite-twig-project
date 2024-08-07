@@ -1,0 +1,25 @@
+.align-items-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nowrap {
+  text-wrap: nowrap;
+}
+
+// Grid
+.row {
+  display: flex;
+}
+
+// Collapse
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition-collapse;
+}
+

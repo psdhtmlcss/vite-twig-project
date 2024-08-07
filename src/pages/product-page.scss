@@ -1,0 +1,24 @@
+// Base
+@import '@/assets/common/common.scss';
+@import '@/components/page/page.scss';
+@import '@/components/buttons/buttons.scss';
+@import '@/components/container/container.scss';
+@import '@/components/header/header.scss';
+@import '@/components/products-nav/products-nav.scss';
+@import '@/components/footer/footer.scss';
+// Libraries
+@import '@nm/swiper/swiper';
+@import '@nm/swiper/modules/pagination';
+@import '@nm/swiper/modules/navigation';
+// Only this page
+@import '@/components/main/main.scss';
+@import '@/components/product-page/product-page.scss';
+@import '@/components/left-nav/left-nav.scss';
+@import '@/components/breadcrumbs/breadcrumbs.scss';
+@import '@/components/product-info/product-info.scss';
+@import '@/components/badge/badge.scss';
+@import '@/components/table/table.scss';
+@import '@/components/accordion/accordion.scss';
+@import '@/components/ratings-block/ratings-block.scss';
+@import '@/components/mobile-fixed-panel/mobile-fixed-panel.scss';
+@import '@/components/swiper/swiper.scss';
