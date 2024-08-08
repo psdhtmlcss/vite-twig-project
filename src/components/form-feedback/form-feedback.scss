@@ -1,0 +1,12 @@
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: $col-padding;
+  
+  label,
+  .form-control,
+  .btn {
+    display: block;
+    width: 100%;
+  }
+}

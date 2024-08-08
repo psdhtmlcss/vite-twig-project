@@ -23,3 +23,11 @@
   @include transition-collapse;
 }
 
+.fade {
+  transition: opacity .15s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+

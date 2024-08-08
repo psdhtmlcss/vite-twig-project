@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	{% block styles %}{% endblock %}
+</head>
+<body class="page__body {{ bodyClass }}">
+  {% include '../components/header/header.twig' %}
+  {% include '../components/products-nav/products-nav.twig' %}
+  {% block content %}{% endblock %}
+  {% include '../components/ratings-block/ratings-block.twig' %}
+  {% include '../components/footer/footer.twig' %}
+  {% block modals %}{% endblock %}
+  {% block scripts %}
+    <script type="module" src="/src/layouts/main.js"></script>
+  {% endblock %}
+</body>
+</html>

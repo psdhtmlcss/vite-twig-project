@@ -1,1 +1,11 @@
-{% extends 'layouts/main.twig' %}
+{% extends 'layouts/front.twig' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/index.scss">
+{% endblock %}
+
+{% block content %}
+  <section style="padding: 50px 0;">
+    <div class="container"><input type="text" class="form-control" value="some value"></div>
+  </section>
+{% endblock %}
