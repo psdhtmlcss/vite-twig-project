@@ -3,8 +3,9 @@
   align-items: center;
   gap: $col-padding;
 
-  svg {
+  a {
     display: none;
+    line-height: 0;
   }
 
   @media screen and (max-width: $mobile) {
@@ -19,7 +20,7 @@
     padding: 0 $col-padding;
     font-size: 18px;
 
-    svg {
+    a {
       display: block;
     }
 
