@@ -1,6 +1,8 @@
 $border-color-nav: #E2E4EB;
 
 .nav {
+  position: relative;
+  z-index: 200;
 
   @media screen and (max-width: $pc) {
     width: 100%;
@@ -102,7 +104,7 @@ $border-color-nav: #E2E4EB;
   &__submenu {
     display: none;
     position: absolute;
-    top: 97px;
+    top: 67px;
     left: 0;
     margin: 0;
     padding: 0;
@@ -123,6 +125,12 @@ $border-color-nav: #E2E4EB;
       height: auto;
       display: block;
 
+      &:first-child {
+        a {
+          border-top: 0;
+        }
+      }
+
       a {
         display: block;
         padding: $col-padding;
@@ -132,6 +140,8 @@ $border-color-nav: #E2E4EB;
         text-transform: none;
         font-size: 16px;
         font-weight: 400;
+
+        
 
         @media screen and (max-width: $pc) {
           border: 0;

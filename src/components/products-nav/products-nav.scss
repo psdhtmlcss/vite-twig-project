@@ -3,6 +3,12 @@ $nav-height: 54px;
 .products-nav {
   height: $nav-height;
   background-color: $blue-dark;
+  position: relative;
+  z-index: 100;
+
+  &-opacity {
+    background-color: rgba($blue-dark, .75);
+  }
 
   &.fixed {
     position: fixed;

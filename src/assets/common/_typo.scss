@@ -47,9 +47,10 @@
   src: url('@/assets/fonts/roboto-condensed-6.woff2') format('woff2');
 }
 
-h1 {
+h1, .h1 {
   margin: 0;
   font-size: 30px;
+  font-weight: 700;
 }
 
 h2 {

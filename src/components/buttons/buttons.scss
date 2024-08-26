@@ -6,7 +6,7 @@ $height: 44px;
   outline: none;
   padding: 0 $gap;
   background-color: transparent;
-  font-weight: bold;
+  font-weight: 500;
   border-radius: $border-radius;
   @include transition(background-color);
   cursor: pointer;
