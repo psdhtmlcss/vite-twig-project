@@ -15,3 +15,38 @@
 // Only this page
 @import '@/components/main/main.scss';
 @import '@/components/main-slider/main-slider.scss';
+@import '@/components/section/section.scss';
+
+h2 {
+  font-size: 30px;
+  margin: 30px 0;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+}
+
+.about-section {
+  text-align: center;
+  background-color: $white;
+
+  @media screen and (max-width: $mobile) {
+    svg {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  p {
+    max-width: 1000px;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    margin: 0 auto 30px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+}
