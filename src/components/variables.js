@@ -1,3 +1,6 @@
+// Body
+export const body = document.querySelector('body');
+
 // Header
 export const header = document.querySelector('.js-header');
 export const headerNav = header.querySelector('.js-header-nav');
