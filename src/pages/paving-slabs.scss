@@ -1,0 +1,21 @@
+// Base
+@import '@/assets/common/common.scss';
+@import '@/components/page/page.scss';
+@import '@/components/buttons/buttons.scss';
+@import '@/components/form-control/form-control.scss';
+@import '@/components/container/container.scss';
+@import '@/components/header/header.scss';
+@import '@/components/products-nav/products-nav.scss';
+@import '@/components/ratings-block/ratings-block.scss';
+@import '@/components/footer/footer.scss';
+// Only this page
+@import '@/components/jumbotron/jumbotron.scss';
+
+.jumbotron {
+  background: url("@/assets/img/main-page/main-slider__item-0.jpg") bottom center no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: $mobile) {
+    background-image: url("@/assets/img/main-page/main-slider__item-0-mobile.jpg");
+  }
+}

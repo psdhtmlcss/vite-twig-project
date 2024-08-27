@@ -13,6 +13,7 @@ $height: 44px;
   color: white;
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   justify-content: center;
   text-decoration: none;
 
@@ -33,21 +34,13 @@ $height: 44px;
     }
   }
 
-  &-outline-primary {
+  &-outline-default {
     border: 1px solid $border-color;
     color: $blue-dark;
 
     &:hover {
       background-color: $border-color;
     }
-  }
-
-  &-link {
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
   }
 
   // Modal close button

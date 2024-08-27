@@ -53,7 +53,7 @@
   &__heading {
     font-size: 48px;
     font-weight: 400;
-    text-shadow: 0 2px 10px rgba($blue-dark, .5);
+    text-shadow: $text-shadow;
 
     @media screen and (max-width: $mobile) {
       font-size: 32px;

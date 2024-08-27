@@ -1,0 +1,39 @@
+{% set productsNavClass = 'products-nav-opacity' %}
+{% set title = 'Тротуарная плитка' %}
+{% extends 'layouts/one-column.twig' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/paving-slabs.scss">
+{% endblock %}
+
+{% block content %}
+<section class="jumbotron">
+  <div class="container">
+    <h1>Тротуарная плитка и брусчатка в Самаре</h1>
+    <div class="h1">Производство и продажа с 2003 года</div>
+    <div class="jumbotron__pluses">
+      <div class="jumbotron__plus">
+        <img src="/src/assets/img/icons/icon-clients-white.svg" alt="">
+        Клиентами нашей компании стали более 7350 частных лиц и организаций
+      </div>
+      <div class="jumbotron__plus">
+      <img src="/src/assets/img/icons/icon-delivery-white.webp" alt="">
+        Доставим на следующий день после заключения договора
+      </div>
+      <div class="jumbotron__plus">
+        <img src="/src/assets/img/icons/icon-laying-white.webp" alt="">
+        Произведем монтаж за 10 дней с договором и гарантией
+      </div>
+    </div>
+    <footer>
+      <button type="button" class="btn btn-success">Получить консультацию</button>
+      <a href="#" class="btn btn-outline-default">Посмотреть каталог</a>
+    </footer>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+  {{ parent() }}
+  <script type="module" src="/src/pages/paving-slabs.js"></script>
+{% endblock %}

@@ -1,5 +1,17 @@
 {% extends 'layouts/main.twig' %}
 
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/pages.scss">
+{% endblock %}
+
 {% block content %}
-  
+<section>
+  <h1>Страницы</h1>
+  <ul>
+    <li><a href="/" target="newtab">Главная</a></li>
+    <li><a href="/paving-slabs" target="newtab">Тротуарная плитка (посадочная)</a></li>
+    <li><a href="/catalog" target="newtab">Каталог (тротуарная плитка)</a></li>
+    <li><a href="/product-page" target="newtab">Карточка товара (тротуарная плитка)</a></li>
+  </ul>
+</section>
 {% endblock %}
