@@ -1,0 +1,10 @@
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}

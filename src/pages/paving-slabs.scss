@@ -1,5 +1,6 @@
 // Base
 @import '@/assets/common/common.scss';
+@import '@/layouts/one-column.scss';
 @import '@/components/page/page.scss';
 @import '@/components/buttons/buttons.scss';
 @import '@/components/form-control/form-control.scss';
@@ -10,6 +11,8 @@
 @import '@/components/footer/footer.scss';
 // Only this page
 @import '@/components/jumbotron/jumbotron.scss';
+@import '@/components/section/section.scss';
+@import '@/components/products-category/products-category.scss';
 
 .jumbotron {
   background: url("@/assets/img/main-page/main-slider__item-0.jpg") bottom center no-repeat;
@@ -17,5 +20,78 @@
 
   @media screen and (max-width: $mobile) {
     background-image: url("@/assets/img/main-page/main-slider__item-0-mobile.jpg");
+  }
+}
+
+.quality {
+  background-color: $white;
+  font-size: 18px;
+  h2 {
+    text-align: center;
+  }
+
+  .row {
+    gap: $gap;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.technology {
+  font-size: 18px;
+  h2 {
+    text-align: center;
+  }
+
+  &__products-category {
+    margin-top: 30px;
+  }
+}
+
+.views-technology {
+  display: flex;
+  gap: $gap;
+
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  &__view {
+    width: calc(100% - 15px);
+    background-color: $white;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+    padding: 15px;
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        svg {
+          flex-shrink: 0;
+        }
+      }
+    }
   }
 }

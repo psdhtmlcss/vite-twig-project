@@ -1,5 +1,6 @@
 // Base
 @import '@/assets/common/common.scss';
+@import '@/layouts/one-column.scss';
 @import '@/components/page/page.scss';
 @import '@/components/buttons/buttons.scss';
 @import '@/components/form-control/form-control.scss';
@@ -15,16 +16,6 @@
 // Only this page
 @import '@/components/main-slider/main-slider.scss';
 @import '@/components/section/section.scss';
-
-h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-
-  @media screen and (max-width: $mobile) {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-}
 
 .about-section {
   text-align: center;

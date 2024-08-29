@@ -1,0 +1,100 @@
+.products-category {
+  display: flex;
+  gap: $gap;
+
+  @media screen and (max-width: $mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $s) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: $xs) {
+    flex-direction: column;
+  }
+
+  &__card {
+    background-color: $white;
+    border-radius: $border-radius-md;
+    box-shadow: $box-shadow;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 390px;
+
+    @media screen and (max-width: $mobile) {
+      width: 290px;
+    }
+
+    @media screen and (max-width: $s) {
+      width: calc(50% - 8px);
+    }
+
+    @media screen and (max-width: $xs) {
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+
+      @media screen and (max-width: $xs) {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .description {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 194px;
+      background-color: rgba($blue-dark, .67);
+      padding: 15px;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: end;
+
+      @media screen and (max-width: $xs) {
+        min-height: initial;
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+
+        @media screen and (max-width: $pc) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: $xs) {
+          font-size: 20px;
+        }
+      }
+
+      .btn {
+        height: 35px;
+
+        @media screen and (max-width: $pc) {
+          font-size: 14px;
+        }
+      }
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
