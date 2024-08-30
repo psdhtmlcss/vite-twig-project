@@ -75,6 +75,10 @@
     gap: $gap;
     justify-content: center;
 
+    @media screen and (max-width: $mobile) {
+      gap: 15px;
+    }
+
     .btn-outline-default {
       color: $white;
       border-color: $white;

@@ -23,31 +23,59 @@
   }
 }
 
-.quality {
-  background-color: $white;
+.section {
+
   font-size: 18px;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 16px;
+  }
+
   h2 {
     text-align: center;
   }
+}
+
+.quality {
+  background-color: $white;
 
   .row {
     gap: $gap;
 
     @media screen and (max-width: $mobile) {
       flex-direction: column;
+      align-items: center;
+      gap: 15px;
     }
   }
 
   p {
     margin-top: 0;
   }
+
+  a {
+    line-height: 0;
+  }
+
+  img {
+    @media screen and (max-width: $mobile) {
+      width: 100px;
+    }
+  }
+  figure {
+    margin: 0 0 5px;
+    text-align: center;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+
+  }
 }
 
 .technology {
-  font-size: 18px;
-  h2 {
-    text-align: center;
-  }
 
   &__products-category {
     margin-top: 30px;
@@ -92,6 +120,111 @@
           flex-shrink: 0;
         }
       }
+    }
+  }
+}
+
+.company-advantages {
+  background-color: $white;
+
+  h2 {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    flex-shrink: 0;
+    display: flex;
+    gap: 15px;
+
+    @media screen and (max-width: $mobile) {
+      width: auto;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $mobile) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.videos {
+  display: flex;
+  gap: $gap;
+
+  @media screen and (max-width: $s) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+
+    @media screen and (max-width: $s) {
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+    }
+  }
+}
+
+.privilege {
+  background-color: $white;
+
+  h2 {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+  }
+
+  &__item {
+    width: calc(33% - 30px);
+    flex-shrink: 0;
+
+    @media screen and (max-width: $pc) {
+      width: calc(50% - 30px);
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: 0;
     }
   }
 }
