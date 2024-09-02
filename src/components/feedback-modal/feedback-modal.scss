@@ -10,16 +10,25 @@
   overflow-y: auto;
   outline: 0;
 
+  &.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0, -50px);
+  }
+
   &.show .modal-dialog {
     transform: none;
   }
 
   &-dialog {
-    max-width: 300px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - $gap);
+    max-width: 400px;
+    min-height: calc(100% - $gap);
     margin-left: auto;
     margin-right: auto;
     margin-top: $gap;
-    transition: transform .3s ease-out;
+    @include transition-modal;
     pointer-events: none;
     position: relative;
   }
@@ -30,22 +39,24 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: $white;
+    background-color: $bg-color;
     border-radius: $border-radius-lg;
     outline: none;
   }
 
   &__header {
     border-radius: $border-radius-lg $border-radius-lg 0 0;
-    padding: $col-padding;
+    padding: $col-padding $col-padding 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid $border-color;
+    justify-content: flex-end;
   }
 
   &__body {
-    padding: $col-padding;
+    padding: 0 $col-padding $col-padding;
+
+    h3 {
+      margin-bottom: 15px;
+    }
   }
 
   &-backdrop {

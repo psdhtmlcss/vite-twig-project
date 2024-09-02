@@ -57,6 +57,16 @@
     
   }
 
+  &__video {
+    @media screen and (max-width: $mobile) {
+      padding: 0 $col-padding;
+
+      video {
+        width: 100%;
+      }
+    }
+  }
+
   &__properties {
     @media screen and (max-width: $mobile) {
       padding: 0 $col-padding;

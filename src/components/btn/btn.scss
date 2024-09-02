@@ -34,12 +34,28 @@ $height: 44px;
     }
   }
 
+  &-default {
+    border: 1px solid $border-color;
+    background-color: $white;
+    color: $blue-dark;
+  }
+
   &-outline-default {
     border: 1px solid $border-color;
     color: $blue-dark;
 
     &:hover {
       background-color: $border-color;
+    }
+  }
+
+  &-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+
+    &:checked+.btn {
+      background-color: rgba($border-color, .3);
     }
   }
 

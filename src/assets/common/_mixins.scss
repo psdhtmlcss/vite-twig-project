@@ -5,3 +5,7 @@
 @mixin transition-collapse() {
   transition: height .35s ease;
 }
+
+@mixin transition-modal() {
+  transition: transform .3s ease-out;
+}
