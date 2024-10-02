@@ -3,7 +3,7 @@ import twig from '@vituum/vite-plugin-twig'
 import path, { resolve } from 'path'
 
 export default {
-  base: '/vite-twig-project/',
+  // base: '/vite-twig-project/',
   plugins: [
     vituum(),
     twig({
