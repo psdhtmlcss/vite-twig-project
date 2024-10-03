@@ -1,4 +1,3 @@
-import { Collapse, Modal } from 'bootstrap';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import IMask from 'imask';

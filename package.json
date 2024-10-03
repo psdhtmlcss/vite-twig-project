@@ -11,6 +11,8 @@
   "devDependencies": {
     "@vituum/vite-plugin-twig": "^1.1.0",
     "sass": "^1.77.8",
+    "vite-plugin-babel": "^1.2.0",
+    "vite-plugin-inspect": "^0.8.7",
     "vituum": "^1.1.1"
   },
   "dependencies": {
