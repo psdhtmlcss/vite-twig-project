@@ -19,18 +19,18 @@
   }
 
   .item-0 {
-    background-image: url("@/img/main-page/main-slider__item-0.jpg");
+    background-image: url("../../img/main-page/main-slider__item-0.jpg");
 
     @media screen and (max-width: $mobile) {
-      background-image: url("@/img/main-page/main-slider__item-0-mobile.jpg");
+      background-image: url("../../img/main-page/main-slider__item-0-mobile.jpg");
     }
   }
 
   .item-1 {
-    background: url("@/img/main-page/main-slider__item-1.jpg");
+    background: url("../../img/main-page/main-slider__item-1.jpg");
 
     @media screen and (max-width: $mobile) {
-      background-image: url("@/img/main-page/main-slider__item-1-mobile.jpg");
+      background-image: url("../../img/main-page/main-slider__item-1-mobile.jpg");
       background-position: bottom center;
     }
   }
