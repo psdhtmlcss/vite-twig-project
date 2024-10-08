@@ -7,8 +7,8 @@ import { defineConfig, loadEnv } from 'vite';
 
 console.log('env', import.meta.env);
 export default {
-  base: '/vite-twig-project/',
-  // base: './',
+  // base: '/vite-twig-project/',
+  base: './',
   plugins: [
     Inspect(),
     vituum(),

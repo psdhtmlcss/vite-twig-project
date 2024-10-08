@@ -16,9 +16,15 @@
   }
 
   &__heading {
-
     @media screen and (max-width: $mobile) {
       margin-bottom: 0;
+    }
+  }
+
+  // Drupal markup
+  h1 {
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
   }
 }

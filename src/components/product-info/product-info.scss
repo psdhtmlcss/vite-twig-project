@@ -54,6 +54,14 @@
     @media screen and (max-width: $mobile) {
       padding: 0 $col-padding;
     }
+
+    p {
+      margin: 0;
+
+      & + p {
+        margin-top: $col-padding;
+      }
+    }
     
   }
 
@@ -78,6 +86,10 @@
 
     @media screen and (max-width: $mobile) {
       border-radius: 0;
+    }
+
+    .note {
+      margin-top: 10px;
     }
   }
 

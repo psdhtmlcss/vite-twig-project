@@ -1,5 +1,5 @@
 .product-heading {
-  display: flex;
+  display: none;
   align-items: center;
   gap: $col-padding;
 
@@ -9,6 +9,7 @@
   }
 
   @media screen and (max-width: $mobile) {
+    display: flex;
     position: fixed;
     left: 0;
     top: 50px;
