@@ -33,16 +33,22 @@
     justify-content: space-between;
     align-items: center;
 
-    .btn-link {
+    a.btn {
       color: $blue-dark;
+      width: 50%;
       text-align: left;
-      padding: 0;
-      flex-shrink: 0;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 13px;
+      padding: 0 10px;
+
+      svg {
+        flex-shrink: 0;
+        width: 24px;
+      }
     }
 
-    a {
+    a.phone {
+      width: 50%;
       display: block;
       text-align: right;
       text-decoration: none;
