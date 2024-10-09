@@ -25,12 +25,10 @@ const swiperOption = {
 const swiper = new Swiper('.swiper', swiperOption);
 // const mask = IMask(phoneInput, maskOptions);
 
-const tables = document.querySelectorAll('.accordion .table');
-for (let i = 0; i < tables.length; i++) {
-  let wrapper = document.createElement('div');
-  let parent = tables[i].parentElement;
-  wrapper.classList.add('table-wrapper');
-  wrapper.prepend(tables[i]);
-  parent.prepend(wrapper);
-}
+const table = document.querySelector('.accordion .table');
+let wrapper = document.createElement('div');
+let parent = table.parentElement;
+wrapper.classList.add('table-wrapper');
+wrapper.prepend(table);
+parent.prepend(wrapper);
 
