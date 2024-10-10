@@ -20,6 +20,10 @@
     &:hover {
       color: $green; 
     }
+
+    &.is-active {
+      color: $green;
+    }
   }
 
   &__submenu {
@@ -39,6 +43,10 @@
 
       &:hover {
         color: $green;
+      }
+
+      &.is-active {
+        font-weight: 700;
       }
     }
   }
