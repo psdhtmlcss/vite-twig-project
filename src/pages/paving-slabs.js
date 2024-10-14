@@ -14,4 +14,7 @@ const swiperOption = {
   lazy: true
 };
 
-// const swiper = new Swiper('.swiper', swiperOption);
+const photos = document.querySelectorAll('.js-photos');
+for (let i = 0; i < photos.length; i++) {
+  new Swiper(photos[i], swiperOption);
+}

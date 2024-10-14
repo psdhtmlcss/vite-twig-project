@@ -22,6 +22,7 @@
 
     @media screen and (max-width: $tablet) {
       width: calc(50% - 15px);
+      max-width: 290px;
       height: auto;
     }
 
@@ -29,9 +30,12 @@
       width: 290px;
     }
 
-    @media screen and (max-width: $s) {
-      width: calc(50% - 8px);
-      height: 290px;
+    .photo {
+
+      @media screen and (max-width: $tablet) {
+        height: 250px;
+        overflow: hidden;
+      }
     }
 
     img {
@@ -43,15 +47,8 @@
       @media screen and (max-width: $tablet) {
         position: static;
         width: 100%;
-        max-height: 250px;
         display: block;
         line-height: 0;
-      }
-
-      @media screen and (max-width: $xs) {
-        width: auto;
-        height: 100%;
-        display: block;
       }
     }
 
@@ -81,7 +78,7 @@
       }
 
       h3 {
-        flex-shrink: 0;
+        color: $white;
       }
 
       a {

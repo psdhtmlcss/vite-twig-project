@@ -9,19 +9,24 @@
 @import '@/components/products-nav/products-nav.scss';
 @import '@/components/ratings-block/ratings-block.scss';
 @import '@/components/footer/footer.scss';
+// Libraries
+@import '@nm/swiper/swiper';
+@import '@nm/swiper/modules/pagination';
+@import '@nm/swiper/modules/navigation';
 // Only this page
 @import '@/components/jumbotron/jumbotron.scss';
 @import '@/components/section/section.scss';
 @import '@/components/products-category/products-category.scss';
 @import '@/components/product-card/product-card-lg.scss';
 @import '@/components/catalog-items/catalog-items.scss';
+@import '@/components/swiper/swiper.scss';
 
 .jumbotron {
-  background: url("@/img/main-page/main-slider__item-0.jpg") bottom center no-repeat;
+  background: url("@/img/main-page/main-slider__item-0.webp") bottom center no-repeat;
   background-size: cover;
 
   @media screen and (max-width: $mobile) {
-    background-image: url("@/img/main-page/main-slider__item-0-mobile.jpg");
+    background-image: url("@/img/main-page/main-slider__item-0-mobile.webp");
   }
 }
 

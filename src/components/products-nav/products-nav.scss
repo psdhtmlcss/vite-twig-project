@@ -137,6 +137,7 @@ $nav-height: 54px;
     padding: 0;
     background-color: $blue-dark;
     border-radius: 0 0 $border-radius-lg $border-radius-lg;
+    padding-top: 10px;
 
     @media screen and (max-width: $mobile) {
       display: block;
