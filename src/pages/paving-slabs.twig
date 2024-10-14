@@ -222,6 +222,17 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <h2>Каталог тротуарной плитки</h2>
+    <div class="catalog-items">
+      {% for i in 0..10 %}
+        {% include '/components/product-card/product-card-lg.twig' %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section company-advantages">
    <div class="container">
     <h2>Почему быть клиентом компании «Флаг стоун» выгодно?</h2>
