@@ -25,16 +25,15 @@
 @import '@/components/company-advantages/company-advantages.scss';
 
 .jumbotron {
-  background: url("@/img/main-page/main-slider__item-0.webp") bottom center no-repeat;
+  background: url("@/img/main-page/main-slider__item-1.webp") bottom center no-repeat;
   background-size: cover;
 
   @media screen and (max-width: $mobile) {
-    background-image: url("@/img/main-page/main-slider__item-0-mobile.webp");
+    background-image: url("@/img/main-page/main-slider__item-1-mobile.webp");
   }
 }
 
 .section {
-
   font-size: 18px;
 
   @media screen and (max-width: $mobile) { 
@@ -46,105 +45,34 @@
   }
 }
 
-.quality {
+.products-section {
   background-color: $white;
-
-  .row {
-    gap: $gap;
-
-    @media screen and (max-width: $mobile) {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-  }
-
   p {
-    margin-top: 0;
-  }
-
-  a {
-    line-height: 0;
-  }
-
-  img {
-    @media screen and (max-width: $mobile) {
-      width: 100px;
-    }
-  }
-  figure {
-    margin: 0 0 5px;
-    text-align: center;
-  }
-
-  figcaption {
-    text-align: center;
-    font-style: italic;
-    font-size: 14px;
-
+    margin-bottom: 30px;
   }
 }
 
-.technology {
+.technologies-section {
 
-  &__products-category {
-    margin-top: 30px;
+  &__views-technology {
+    margin-bottom: 30px;
   }
 }
 
-.videos {
-  display: flex;
-  gap: $gap;
-
-  @media screen and (max-width: $s) {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  &__item {
-    width: calc(50% - 15px);
-
-    @media screen and (max-width: $s) {
-      width: 100%;
-    }
-
-    video {
-      width: 100%;
-    }
-  }
-}
-
-.privilege {
+.videos-section {
   background-color: $white;
 
-  h2 {
-    margin-bottom: 50px;
+  video {
+    margin: 0 auto;
+    width: 600px;
+    display: block;
 
-    @media screen and (max-width: $mobile) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gap;
-  }
-
-  &__item {
-    width: calc(33% - 30px);
-    flex-shrink: 0;
-
-    @media screen and (max-width: $pc) {
-      width: calc(50% - 30px);
-    }
-
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $mobile) { 
       width: 100%;
     }
-
-    p {
-      margin-bottom: 0;
-    }
   }
+}
+
+.company-advantages {
+  background-color: transparent;
 }

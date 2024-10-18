@@ -1,0 +1,13 @@
+.main {
+  h1 {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: none;
+}
