@@ -23,18 +23,17 @@
     overflow: hidden;
     border-radius: $border-radius-lg $border-radius-lg 0 0;
     flex-shrink: 0;
+    text-align: center;
 
     @media screen and (max-width: $xs) {
       height: 280px
     }
 
     img {
-      height: 222px;
-      min-width: 290px;
 
       @media screen and (max-width: $xs) {
-        height: 280px;
-        min-width: 425px;
+        // height: 280px;
+        // min-width: 425px;
       }
     }
   }
