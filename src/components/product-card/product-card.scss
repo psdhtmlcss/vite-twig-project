@@ -31,9 +31,14 @@
 
     img {
 
-      @media screen and (max-width: $xs) {
-        // height: 280px;
-        // min-width: 425px;
+      &.size-auto {
+        max-width: 290px;
+        max-height: 222px;
+
+        @media screen and (max-width: $xs) {
+          max-width: 380px;
+          max-height: 280px;
+        }
       }
     }
   }

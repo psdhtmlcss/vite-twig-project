@@ -1,0 +1,14 @@
+.catalog-block {
+
+  & + & {
+    margin-top: 60px;
+
+    @media screen and (max-width: $mobile) {
+      margin-top: 30px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}

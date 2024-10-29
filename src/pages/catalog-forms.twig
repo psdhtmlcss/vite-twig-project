@@ -1,0 +1,38 @@
+{% set footerClass = 'footer-padding-bottom' %}
+{% set title = 'Каталог форм' %}
+{% extends 'layouts/main.twig' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/catalog-forms.scss">
+{% endblock %}
+
+{% block content %}
+  {% include '/components/left-nav/left-nav.twig' %}
+  <main class="page__main main">
+    {% include '/components/breadcrumbs/breadcrumbs.twig' %}
+    <h1 class="main__heading">Формы</h1>
+    <div class="catalog-block">
+      <h2>Формы из АБС-пластика</h2>
+      <div class="catalog-items">
+        {% set productCardClass = 'catalog-items__item' %}
+        {% for i in 1..5 %}
+          {% include '/components/product-card/product-card-forms.twig' with {count: i} %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="catalog-block">
+      <h2>Формы из полиуретана</h2>
+      <div class="catalog-items">
+        {% set productCardClass = 'catalog-items__item' %}
+        {% for i in 1..5 %}
+          {% include '/components/product-card/product-card-forms.twig' with {count: i} %}
+        {% endfor %}
+      </div>
+    </div>
+  </main>
+{% endblock %}
+
+{% block modals %}
+  {% include '/components/mobile-fixed-panel/mobile-fixed-panel.twig' %}
+{% endblock %}
