@@ -29,16 +29,13 @@
       height: 280px
     }
 
-    img {
+    &.size-auto img {
+      max-width: 290px;
+      max-height: 222px;
 
-      &.size-auto {
-        max-width: 290px;
-        max-height: 222px;
-
-        @media screen and (max-width: $xs) {
-          max-width: 380px;
-          max-height: 280px;
-        }
+      @media screen and (max-width: $xs) {
+        max-width: 380px;
+        max-height: 280px;
       }
     }
   }

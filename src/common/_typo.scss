@@ -69,4 +69,9 @@ p {
 
 a {
   color: $blue;
+
+  &.lnk-dashed {
+    text-decoration: none;
+    border-bottom: 1px dashed $blue;
+  }
 }
