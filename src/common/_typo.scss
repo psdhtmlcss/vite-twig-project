@@ -48,18 +48,18 @@
 }
 
 h1, .h1 {
-  margin: 0;
+  margin: 0 0 30px;
   font-size: 30px;
   font-weight: 700;
 }
 
 h2 {
-  margin: 0;
+  margin: 0 0 25px;
   font-size: 25px;
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 20px;
   font-size: 20px;
 }
 
@@ -73,5 +73,17 @@ a {
   &.lnk-dashed {
     text-decoration: none;
     border-bottom: 1px dashed $blue;
+  }
+
+  &.lnk-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+    svg {
+      path {
+        fill: $blue;
+      }
+    }
   }
 }
