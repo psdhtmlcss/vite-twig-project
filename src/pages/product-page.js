@@ -3,6 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 // import IMask from 'imask';
 import Collapse from 'bootstrap/js/dist/collapse';
 import Modal from 'bootstrap/js/dist/modal';
+import '@/utils/back-catalog';
 
 const swiperOption = {
   modules: [Navigation, Pagination],

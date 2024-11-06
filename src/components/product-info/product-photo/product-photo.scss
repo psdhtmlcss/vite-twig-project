@@ -1,4 +1,9 @@
 .product-photo {
+
+  @media screen and (max-width: $mobile) {
+    background-color: white;
+  }
+
   img {
     display: block;
     width: auto;
