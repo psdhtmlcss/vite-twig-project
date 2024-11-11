@@ -65,6 +65,12 @@ h3 {
 
 p {
   margin: 0 0 $col-padding;
+
+  &.lead {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
 
 a {
@@ -84,6 +90,22 @@ a {
       path {
         fill: $blue;
       }
+    }
+  }
+}
+
+blockquote {
+  padding: 10px 0 10px 20px;
+  border-left: 5px solid $border-color;
+  margin: 0;
+
+  footer {
+    color: $blue-light;
+    font-size: 90%;
+    line-height: 1;
+
+    &:before {
+      content: '\2014 \00A0';
     }
   }
 }
