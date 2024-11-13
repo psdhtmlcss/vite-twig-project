@@ -21,7 +21,8 @@
       color: $green; 
     }
 
-    &.is-active {
+    &.is-active,
+    &.active {
       color: $green;
     }
   }
@@ -45,7 +46,8 @@
         color: $green;
       }
 
-      &.is-active {
+      &.is-active,
+      &.active {
         font-weight: 700;
       }
     }
