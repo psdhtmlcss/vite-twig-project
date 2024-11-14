@@ -29,6 +29,14 @@
     width: calc((100% - ($col-padding * 3))/4);
     text-align: center;
 
+    @media screen and (max-width: $tablet) {
+      width: calc((100% - ($col-padding * 2))/3);
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+    }
+
     a {
       display: block;
       width: 49px;
