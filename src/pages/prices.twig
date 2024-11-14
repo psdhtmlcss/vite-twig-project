@@ -1,0 +1,63 @@
+{% extends 'layouts/one-column.twig' %}
+{% set title = 'Прайс-листы' %}
+{% set price_url = '/sites/default/files/prices/' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/prices.scss">
+{% endblock %}
+
+{% block content %}
+<main class="page__main main">
+  <section class="section">
+    <div class="container">
+      <h1>Прайс-листы</h1>
+      <div class="prices">
+        <div class="panel prices__item">
+          <h4>Прайс-лист на вибролитьевую тротуарную плитку</h4>
+          <a href="{price_url}/vibrolitevaya_trotuarnaya_plitka.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на вибролитьевой бордюрный камень</h4>
+          <a href="{price_url}/vibrolitevoj_bordurnyj_kamen.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на вибропрессованную тротуарную плитку</h4>
+          <a href="{price_url}/vibropressovannaya_trotuarnaya_plitka.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на вибропрессованную тротуарную плитку (2)</h4>
+          <a href="{price_url}/vibropressovannaya_trotuarnaya_plitka_2.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на декоративный искусственный камень</h4>
+          <a href="{price_url}/dekorativniy_iskusstvenniy_kamen.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на формы для производства тротуарной плитки</h4>
+          <a href="{price_url}/formy_abs.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на формы для производства декоративного камня</h4>
+          <a href="{price_url}/formy_poliuretan.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на пигменты</h4>
+          <a href="{price_url}/pigmenty.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на химические добавки</h4>
+          <a href="{price_url}/him_dobavki.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на доставку</h4>
+          <a href="{price_url}/dostavka.pdf"></a>
+        </div>
+        <div class="panel prices__item">
+          <h4>Прайс-лист на доставку</h4>
+          <a href="{price_url}/service.pdf"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
