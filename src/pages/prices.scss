@@ -13,3 +13,28 @@
 @import '@/components/breadcrumbs/breadcrumbs.scss';
 @import '@/components/section/section.scss';
 @import '@/components/panel/panel.scss';
+
+.page__main {
+  max-width: initial;
+}
+
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $col-padding;
+  justify-content: center;
+
+  &__item {
+    padding: $col-padding;
+    width: calc((100% - ($col-padding * 3))/4);
+    text-align: center;
+
+    a {
+      display: block;
+      width: 49px;
+      height: 64px;
+      background: url('../img/icons/icon-pdf.svg') center no-repeat;
+      margin: 0 auto;
+    }
+  }
+}
