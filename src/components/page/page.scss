@@ -35,15 +35,18 @@
     @media screen and (max-width: $pc) {
       display: none;
     }
+
+    & + &__main {
+      max-width: calc(100% - $aside-width - $gap);
+
+      @media screen and (max-width: $pc) {
+        max-width: initial;
+      }
+    }
   }
 
   &__main {
     width: 100%;
-    max-width: calc(100% - $aside-width - $gap);
-
-    @media screen and (max-width: $pc) {
-      max-width: initial;
-    }
   }
 
   &__footer {
