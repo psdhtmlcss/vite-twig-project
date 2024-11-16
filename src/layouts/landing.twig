@@ -9,11 +9,7 @@
 <body class="page__body {{ bodyClass }}">
   {% include '../components/header/header.twig' %}
   {% include '../components/products-nav/products-nav.twig' %}
-  <div class="page__content">
-    <div class="container">
-      <main class="page__main main">{% block content %}{% endblock %}</main>
-    </div>
-  </div>
+  {% block content %}{% endblock %}
   {% include '../components/ratings-block/ratings-block.twig' %}
   {% include '../components/footer/footer.twig' %}
   {% block modals %}{% endblock %}

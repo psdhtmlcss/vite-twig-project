@@ -54,6 +54,7 @@
     font-size: 48px;
     font-weight: 400;
     text-shadow: $text-shadow;
+    margin-bottom: 0;
 
     @media screen and (max-width: $mobile) {
       font-size: 32px;

@@ -20,7 +20,11 @@
 
   &__content {
     flex-shrink: 0;
-    padding: $gap 0;
+    padding: 50px 0;
+
+    @media screen and (max-width: $mobile) {
+      padding: $gap 0;
+    }
     
   &>.container {
       display: flex;

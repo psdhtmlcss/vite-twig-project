@@ -1,0 +1,30 @@
+{% extends 'layouts/one-column.twig' %}
+{% set title = 'Типовая текстовая страница' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/education.scss">
+{% endblock %}
+
+{% block content %}
+{% include '/components/breadcrumbs/breadcrumbs.twig' %}
+{# Drupal markup #}
+<h1>Заголовок H1</h1>
+{# END Drupal markup #}
+
+<p><a href="">Lorem ipsum dolor sit amet consectetur</a>, adipisicing elit. Dolore quidem iste architecto veritatis dolorum accusantium dignissimos, impedit magnam ipsum, odio ad eligendi cumque aspernatur saepe, laborum earum inventore. Unde, expedita?</p>
+<h2>Заголовок H2</h2>
+<p>Vel maiores iure, id autem laudantium dolore praesentium eum totam soluta quia ducimus sint cupiditate alias veritatis corrupti quidem nulla officia veniam voluptas necessitatibus ex recusandae? Odit doloremque vitae similique?</p>
+<h3>Заголовок H3</h3>
+<p>Vero nobis expedita dolores, minima laudantium eos dolorem repellat et similique suscipit. Assumenda quibusdam placeat nisi obcaecati blanditiis corrupti molestias dolor. Iste, laborum. Necessitatibus vero expedita eaque corporis atque quos?</p>
+<h4>Заголовок H4</h4>
+<ul>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+</ul>
+<ol>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+  <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, iure? Accusantium unde sapiente praesentium impedit commodi fugiat, iusto consequatur voluptatum perspiciatis, eligendi esse voluptate in, delectus doloribus at ipsa porro!</li>
+</ol>
+{% endblock %}
