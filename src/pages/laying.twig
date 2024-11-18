@@ -1,0 +1,41 @@
+{% set productsNavClass = 'products-nav-opacity' %}
+{% set title = 'Укладка тротуарной плитки' %}
+
+{% extends 'layouts/landing.twig' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/laying.scss">
+{% endblock %}
+
+{% block content %}
+<section class="section jumbotron">
+  <div class="container">
+    <h1>Укладка тротуарной плитки<br>и брусчатки в Самаре</h1>
+    <p class="lead">При заключении договора<br> замер и выезд специалиста <strong>бесплатно!</strong></p>
+    <div class="buttons">
+      <button type="button" class="btn btn-success btn-lg">Заказать обратный  звонок</button>
+      <button type="button" class="btn btn-outline-default btn-lg">Рассчитать стоимость</button>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="/src/img/icons/icon-warranty.svg" alt="">
+        <strong>Гарантия</strong> на укладку тротуарной плитки
+      </div>
+      <div class="col">
+        <img src="/src/img/icons/icon-order.svg" alt="">
+        Заключение <strong>договора подряда</strong>
+      </div>
+      <div class="col">
+        <img src="/src/img/icons/icon-clients-white.svg" alt="">
+        <strong>Более 7000</strong> довольных клиентов
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+  {{ parent() }}
+  {# <script type="module" src="/src/pages/laying.js"></script> #}
+{% endblock %}
