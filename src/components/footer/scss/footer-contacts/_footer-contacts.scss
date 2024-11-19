@@ -14,6 +14,7 @@
     color: white;
     text-decoration: none;
     @include transition(color);
+    text-wrap: nowrap;
 
     &:hover {
       color: $green-light;

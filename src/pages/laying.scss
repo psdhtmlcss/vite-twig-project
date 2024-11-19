@@ -11,3 +11,212 @@
 @import '@/components/footer/footer.scss';
 // Only this page
 @import '@/components/section/section.scss';
+
+.section {
+
+  h2 {
+    text-align: center;
+  }
+
+  p, li {
+    font-size: 18px;
+  }
+
+  p {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+
+.jumbotron {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/src/img/laying/bg-laying-2560.webp");
+  flex-shrink: 0;
+  color: $white;
+  position: relative;
+  margin-top: -54px;
+  padding: 0;
+
+  @media screen and (max-width: $pc) {
+    height: 650px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 0;
+    padding: 50px 0;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 54px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: $pc) {
+      font-size: 48px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .lead {
+    font-size: 28px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: $pc) {
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .buttons {
+    margin-bottom: 70px;
+    display: flex;
+    gap: $col-padding;
+
+    @media screen and (max-width: $pc) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 40px;
+      flex-direction: column;
+    }
+
+    .btn {
+      color: $white;
+
+      @media screen and (max-width: $mobile) {
+        height: 44px;
+        padding: 0 $col-padding;
+      }
+    }
+  }
+
+  .row {
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      gap: $col-padding;
+    }
+    .col {
+      display: flex;
+      align-items: center;
+      gap: $col-padding;
+      font-size: 18px;
+    }
+  }
+}
+
+.section-prices {
+  background-color: $white;
+
+  h3 {
+    text-align: center;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .download-price {
+    display: inline-block;
+    padding-left: 28px;
+    background: url("/src/img/icons/icon-pdf.svg") left center no-repeat;
+    background-size: 20px;
+    min-height: 25px;
+
+    @media screen and (max-width: $mobile) {
+      text-align-last: left;
+    }
+  }
+}
+
+.section-steps {
+  background-color: $white;
+
+  .container {
+    max-width: 680px;
+  }
+
+  ul {
+    margin: 50px 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      gap: $col-padding;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid $blue-dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $mobile) {
+        width: 40px;
+        height: 40px;
+      }
+
+      img {
+        width: 32px;
+        height: auto;
+
+        @media screen and (max-width: $mobile) {
+          width: 18px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-top: 0;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $blue-light;
+      text-align: left;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.section-instruction {
+  background-color: $white;
+}
