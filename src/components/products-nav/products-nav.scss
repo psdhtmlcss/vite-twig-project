@@ -16,6 +16,11 @@ $nav-height: 54px;
     left: 0;
     z-index: 100;
     width: 100%;
+
+    @media screen and (max-width: $mobile) {
+      right: 0;
+      left: auto;
+    }
   }
 
   &__close-button {

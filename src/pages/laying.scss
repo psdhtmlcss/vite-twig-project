@@ -11,6 +11,7 @@
 @import '@/components/footer/footer.scss';
 // Only this page
 @import '@/components/section/section.scss';
+@import '@/components/accordion/accordion.scss';
 
 .section {
 
@@ -25,6 +26,30 @@
   p {
     text-align: justify;
     text-align-last: center;
+
+    @media screen and (max-width: $mobile) {
+      text-align: left;
+      text-align-last: left;
+    }
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .download-price {
+    display: inline-block;
+    padding-left: 28px;
+    background: url("/src/img/icons/icon-pdf.svg") left center no-repeat;
+    background-size: 20px;
+    min-height: 25px;
+
+    @media screen and (max-width: $mobile) {
+      text-align-last: left;
+    }
   }
 }
 
@@ -74,6 +99,8 @@
   .lead {
     font-size: 28px;
     margin-bottom: 70px;
+    text-align: left;
+    text-align-last: left;
 
     @media screen and (max-width: $pc) {
       font-size: 25px;
@@ -129,25 +156,6 @@
 
   h3 {
     text-align: center;
-  }
-
-  video {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-  }
-
-  .download-price {
-    display: inline-block;
-    padding-left: 28px;
-    background: url("/src/img/icons/icon-pdf.svg") left center no-repeat;
-    background-size: 20px;
-    min-height: 25px;
-
-    @media screen and (max-width: $mobile) {
-      text-align-last: left;
-    }
   }
 }
 
@@ -219,4 +227,48 @@
 
 .section-instruction {
   background-color: $white;
+
+  .img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .accordion {
+    margin-bottom: 30px;
+    background-color: $bg-color;
+    box-shadow: none;
+
+    &__item {
+      clear: both;
+
+      &:before,
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    img {
+      display: block;
+      float: left;
+      margin: 0 15px 15px 0;
+      width: 100%;
+      max-width: 250px;
+
+      @media screen and (max-width: $mobile) {
+        max-width: 600px;
+        margin: 0 0 15px;
+        float: none;
+      }
+    }
+
+    p {
+      text-align: left;
+      text-align-last: left;
+    }
+  }
 }
