@@ -40,7 +40,7 @@
       display: none;
     }
 
-    & + &__main {
+    & + .page__main {
       max-width: calc(100% - $aside-width - $gap);
 
       @media screen and (max-width: $pc) {
