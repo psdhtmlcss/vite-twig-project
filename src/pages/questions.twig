@@ -1,0 +1,589 @@
+{% extends 'layouts/one-column.twig' %}
+{% set title = 'Вопрос-ответ' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/questions.scss">
+{% endblock %}
+
+{% block content %}
+<h1>Вопрос-ответ</h1>
+<div class="questions">
+  <h2>Вопросы по работе офиса</h2>
+  <div class="accordion" id="officeWork">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeWork1" aria-expanded="false" aria-controls="officeWork1">
+          Какой у вас режим работы офиса?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="officeWork1" class="accordion-collapse collapse" data-bs-parent="#officeWork">
+        <div class="accordion__body">
+          <p>Режим работы офиса: понедельник – пятница 9.00-17.30, суббота 10.00 – 14.00 (о работе в субботние дни уточняйте по телефону).</p>
+          <p>Если Вы не можете подъехать к нам в рабочее время,  мы встретимся с вами в любое  удобное для вас время, заранее согласовав это по телефону.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeWork2" aria-expanded="false" aria-controls="officeWork2">
+          Где находиться ваш офис?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="officeWork2" class="accordion-collapse collapse" data-bs-parent="#officeWork">
+        <div class="accordion__body">
+          <p>г. Самара, ул. Авроры 137, 1 этаж. Схему расположения нашего офиса вы можете посмотреть на нашем сайте в разделе «контакты», фотографии офиса в разделе «О компании».</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#officeWork3" aria-expanded="false" aria-controls="officeWork3">
+          Где находиться ваше производство?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="officeWork3" class="accordion-collapse collapse" data-bs-parent="#officeWork">
+        <div class="accordion__body">
+          <p>Наше производство находиться на Кряжу, ул. Спутника 13, в районе ТЦ «Метро».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по тротуарной плитке</h2>
+  <div class="accordion" id="pavingSlabs">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs1" aria-expanded="false" aria-controls="pavingSlabs1">
+          Какие характеристики у вашей плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs1" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Технические характеристики изделий (соответствие ГОСТу 17608-91)</p>
+          <div class="table-wrapper">
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td>Прочность бетона плит на сжатие (класс прочности бетона на сжатие)</td>
+                  <td>В25</td>
+                </tr>
+                <tr>
+                  <td>Класс бетона плит по прочности на растяжение при изгибе</td>
+                  <td>Ввtв 3,6</td>
+                </tr>
+                <tr>
+                  <td>Марка бетона по морозостойкости (замораживание при -20 С и оттаивание в воде при +20 С)</td>
+                  <td>F 200</td>
+                </tr>
+                <tr>
+                  <td>Водопоглощение бетона плит</td>
+                  <td>Менее 5%</td>
+                </tr>
+                <tr>
+                  <td>Истираемость бетона</td>
+                  <td>Менее 0,5 г/см3</td>
+                </tr>
+                <tr>
+                  <td>Отклонение геометрических параметров</td>
+                  <td>+ / - 4 мм</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs2" aria-expanded="false" aria-controls="pavingSlabs2">
+          Из чего сделана ваша плитка?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs2" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <ul>
+            <li>Цемент марки  М 500 Д-0. Поставщик — ЗАО «ЕВРОЦЕМЕНТ груп»;</li>
+            <li>Заполнители:  гранитный щебень фракции от 3 до 10, крупномодульный песок;</li>
+            <li>Модифицирующие добавки: Биопан;</li>
+            <li>Пигменты: Bayferrox (Германия).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs3" aria-expanded="false" aria-controls="pavingSlabs3">
+          Какой срок изготовления заказа?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs3" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Срок изготовления заказа оговаривается индивидуально. Он зависят от объема заказа, загруженности производства, наличия готовой продукции на складе.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs4" aria-expanded="false" aria-controls="pavingSlabs4">
+          Вы осуществляете доставку плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs4" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Мы оказываем услуги по доставке продукции. Стоимость услуги рассчитывается индивидуально и зависит от объема и тоннажа заказа, адреса доставки, а также от грузоподъемности автомобиля. Поставка продукции осуществляется в упаковке на поддонах. Стоимость поддонов в цену продукции не включена, залоговая стоимость поддона - 200 рублей.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs5" aria-expanded="false" aria-controls="pavingSlabs5">
+          Какая стоимость вашей плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs5" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Стоимость нашей тротуарной плитки варьируется в зависимости от размеров и цвета и составляет от 480 до 700 рублей за квадратный метр. Это достойная стоимость для высококачественного продукта с длительным сроком эксплуатации (20 лет). Более точную стоимость вы можете посмотреть в <a href="/vibrolitevaya-trotuarnaya-plitka">каталоге продукции</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs6" aria-expanded="false" aria-controls="pavingSlabs6">
+          Какая плитка лучше вибропрессованная или вибролитьевая?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs6" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Это две разные технологии производства тротуарных плит. У каждой из них есть свои плюсы и минусы.</p>
+          <p><strong>Вибропрессованная технология производства плитки.</strong></p>
+          <p><strong class="text-success">Плюсы:</strong></p>
+          <ul>
+            <li>идеальная геометрия изделия;</li>
+            <li>не скользкая.</li>
+          </ul>
+          <p><strong class="text-danger">Минусы:</strong></p>
+          <ul>
+            <li>показатель водопоглащения  и морозостойкости бетона немного хуже, чем у вибролитьевой;</li>
+            <li>небольшой ассортимент;</li>
+            <li>цветная плитка дорогая, особенно желтые оттенки;</li>
+            <li>сильнее загрязняется в сравнении с вибролитьевой.</li>
+          </ul>
+          <p><strong>Вибролитьевая технологии производства</strong></p>
+          <p><strong class="text-success">Плюсы:</strong></p>
+          <ul>
+            <li>широчайший ассортимент форм и цветов;</li>
+            <li>большой ассортимент фактур поверхности;</li>
+            <li>более прочная  (плитка толщиной 3 см выдерживает машину массой 3т;</li>
+            <li>вибропрессованная плитка при такой нагрузки должна бытьтолщиной 6-7 см);</li>
+            <li>легко очищается от загрязнений.</li>
+          </ul>
+          <p><strong class="text-danger">Минусы:</strong></p>
+          <ul>
+            <li>не всегда хорошая геометрия.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs7" aria-expanded="false" aria-controls="pavingSlabs7">
+          Как ухаживать за плиткой?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs7" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>При эксплуатации тротуарной плитки <strong>запрещается</strong>:</p>
+          <ul>
+            <li> воздействие агрессивных сред (не соответствующих СНиП 2.03.11-85);</li>
+            <li> использование при чистке снега и льда  ударных металлических инструментов, такие как:    лом, скребки, топоры, лопаты, щетки и др.;</li>
+            <li> производить посыпку абразивными смесями, содержащими соль;</li>
+            <li> использовать при мытье плит средства, разъедающие фактурный слой (кислоты и щелочи, содержащиеся в моющих средствах, такие как NaOH, HCI, H2SO4 и др.);</li>
+            <li> заезд на тротуарные плиты транспортных средств с шипованными колесными покрышками, а также автомобилей массой более 3т.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs8" aria-expanded="false" aria-controls="pavingSlabs8">
+          Какую плитку  укладывают под автомобиль?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs8" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>Для парковки автотранспорта массой не более 3т мы рекомендуем использовать вибролитьевую плитку толщиной не менее 30 мм, вибропрессованную – не менее 60 мм. Важно учитывать, что чем меньше размер (площадь) плитки, тем сложнее ее сломать. Поэтому, плитка размером 200*100, 150*150, 150*200 мм хорошо подойдет для автостоянок и подъезда к гаражу.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs9" aria-expanded="false" aria-controls="pavingSlabs9">
+          Как не ошибиться в выборе производителя тротуарной плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs9" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <ul>
+            <li>Уточнить, какие материалы используются при производстве плитки. Для качественной тротуарной плитки используются:
+            <ul>
+              <li>цемент марки М 500 Д-0;</li>
+              <li>крупномодульный песок и гранитный щебень фракции 3 — 10;</li>
+            </ul>
+            </li>
+            <li>Не забудьте посмотреть подтверждающие документы на покупку материалов;</li>
+            <li>Поинтересуйтесь, какие бетоносмесители используются при производстве плитки. Фирмы,  выпускающие качественную продукцию, работают на  бетоносмесителях принудительного действия.  В гравитационных бетоносмесителях плохой промес, в них смесь «падает пласт на пласт», в результате получается смесь завоздушенная и неоднородная, что отрицательно сказывается на качестве бетона.</li>
+            <li>Уточните, как происходит созревание продукции;</li>
+            <li>Уточните, кто работает на производстве: квалифицированные специалисты с опытом работы, либо временно приезжие рабочие с ближнего зарубежья;</li>
+            <li>Поинтересуйтесь, сколько организация работает  на рынке, посмотрите портфолио;</li>
+            <li>Не поленитесь, мы рекомендуем проехать и посмотрите само производство.</li>
+          </ul>
+          <p>Если все, о чем Вам рассказывали — соответствует действительности, можно заключать договор.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs10" aria-expanded="false" aria-controls="pavingSlabs10">
+          Как правильно выбрать тротуарную плитку?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs10" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <ul>
+            <li>Необходимо обратить особое внимание из каких материалов производиться тротуарная плитка. Для производства качественной тротуарной плитки используются следующие компоненты: цемент марки М 500 Д-0, крупномодульный песок, гранитный щебень фракции 3 — 10, пигменты фирмы Bayferrox (Германия), современные пластифицирующие добавки.</li>
+            <li>Изготавливаться плитка должна  на  профессиональном  оборудовании (бетоносмесителях принудительного действия).</li>
+            <li>Следующим критерием при  выборе качественной тротуарной плитки является ее технические характеристики, которые должны соответствовать ГОСТу 17608-91: прочность бетона плит на сжатие (класс прочности бетона на сжатие) — В25; класс бетона плит по прочности на растяжение при изгибе — Ввtв 3,6; марка бетона по морозостойкости (замораживание при -200 С и оттаивание в воде при +200 С) — F200; водопоглащение бетона плит- не более 6 %; истираемость бетона - не более 0,5 г/см3.</li>
+            <li>Ну и конечно, необходимо определиться с  размерами тротуарной плитки, которые должны зависеть от того, как и где ее будут эксплуатировать. Для пешеходных зон выбирайте плитку  толщиной до 30 мм. Для парковки автотранспорта мы рекомендуем использовать вибролитьевую плитку толщиной не менее 30 мм, вибропрессованную - 60 мм. Важно учитывать, что чем меньше размер (площадь) плитки, тем сложнее ее сломать. Поэтому,  плитка размером 200*100, 150*150, 150*200 мм хорошо подойдет для автостоянок и подъезда к гаражу.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs11" aria-expanded="false" aria-controls="pavingSlabs11">
+          Чем ваша плитка отличается от плитки других производителей?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs11" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p><strong>Наши преимущества:</strong></p>
+          <ol>
+            <li>Опыт работы на рынке с 2003 года. Наша плитка лежит на более 5000 объектах Самарского региона, Оренбургской, Саратовской, Пензенской, Ульяновской области, Татарстана, Казахстана.</li>
+            <li>Мы применяем современные, в том числе и собственные технологии производства «Искусственного камня» и тротуарной плитки.</li>
+            <li>Мы работаем только на профессиональном оборудовании. Бетонная смесь тщательно перемешивается в бетоносмесителе принудительного действия. В гравитационных бетоносмесителях плохой промес, в них смесь «падает пласт на пласт», в результате получается смесь завоздушенная и неоднородная, что отрицательно сказывается на качестве бетона.</li>
+            <li>Мы применяем только высококачественное сырье:</li>
+              <ul>
+                <li>Цемент марки  М 500 Д-0. Поставщик — ЗАО «ЕВРОЦЕМЕНТ груп»;</li>
+                <li>Заполнители:  крупномодульный песок, гранитный щебень фракции  3-10;</li>
+                <li>Модифицирующие добавки: Биопан Б2;</li>
+                <li>Пигменты: Bayferrox (Германия).</li>
+              </ul>
+            <li>Правильное созревание продукции (естественная сушка в пленке не менее 20 дней)</li>
+            <li>На нашем производстве работают квалифицированные специалисты с большим опытом работы, с самарской пропиской.</li>
+            <li>Гарантия 1 год на производимую продукцию и на укладку нашими специалистами.</li>
+          </ol>
+          <p><strong>Выгоды для клиента</strong></p>
+          <ul>
+            <li>Покупая у нас, вы приобретаете качественную, красивую и стильную плитку, которая будет радовать Вас долгие года (срок эксплуатации 20 лет).</li>
+            <li>Экономим ваше время: мы предоставляем весь спектр услуг (ландшафтный дизайн,  укладка, доставка плитки, песка, цемента, щебня).</li>
+            <li>Выдержанные сроки поставки товара клиенту.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pavingSlabs12" aria-expanded="false" aria-controls="pavingSlabs12">
+          Как можно продлить срок эксплуатации тротуарной плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="pavingSlabs12" class="accordion-collapse collapse" data-bs-parent="#pavingSlabs">
+        <div class="accordion__body">
+          <p>После укладки плитки мы рекомендуем покрыть ее специальным лаком для бетона или усиливающей защитной пропиткой для пористых минеральных поверхностей c эффектом мокрого камня Силер АК.</p>
+          <p>При его применении:</p>
+          <ul>
+            <li>уменьшается водопоглащение  плитки за счет проникновения лака в поры бетона, в плитку не будут впитываться вредные вещества, способные ее разрушить (соли, кислоты и т.д.);</li>
+            <li>повышается морозостойкость;</li>
+            <li>плитка имеет более насыщенный цвет;</li>
+            <li>защищает плитку от выгорания.</li>
+          </ul>
+          <p>Также при эксплуатации тротуарной плитки запрещается:</p>
+          <ul>
+            <li>воздействие агрессивных сред (не соответствующих СНиП 2.03.11-85);</li>
+            <li>использование при чистке снега и льда  ударных металлических инструментов, такие как:    лом, скребки, топоры, лопаты, щетки и др.;</li>
+            <li>производить посыпку абразивными смесями, содержащими соль;</li>
+            <li>использовать при мытье плит средства, разъедающие фактурный слой (кислоты и щелочи, содержащиеся в моющих средствах, такие как NaOH, HCI, H2SO4 и др.);</li>
+            <li>заезд на тротуарные плиты транспортных средств с шипованными колесными покрышками, а также автомобилей массой более 3т.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по укладке тротуарной плитки</h2>
+  <div class="accordion" id="laying">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laying1" aria-expanded="false" aria-controls="laying1">
+          Сколько стоит укладка тротуарной плитки?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="laying1" class="accordion-collapse collapse" data-bs-parent="#laying">
+        <div class="accordion__body">
+          <p>Цена на укладку тротуарной плитки зависит от:</p>
+          <ul>
+            <li>размера плитки, чем меньше плитка тем дороже;</li>
+            <li>от варианта укладки;</li>
+            <li>от метража.</li>
+          </ul>
+          <p>Таким образом, стоимость укладки варьируется от 450 до 700 руб /м2 на готовое основание. Стоимость укладки бордюров – 1 погонный метр 200 - 250 руб. Стоимость подготовки основания 100 - 200 руб. Стоимость укладки так же зависит от того, где находиться объект и какие условия для работы (температура воздуха). Выезд замерщика Бесплатно, но сначала Вам надо приехать к нам в офис и определиться с плиткой и вариантом укладки.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laying2" aria-expanded="false" aria-controls="laying2">
+          На что укладывают тротуарную плитку?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="laying2" class="accordion-collapse collapse" data-bs-parent="#laying">
+        <div class="accordion__body">
+          <p>Мы рекомендуем укладывать плитку на цементно-песчанную (1:3) смесь. В исключительных случаях (большой склон, ступеньки) можно укладывать на плиточный клей. Если говорить о подготовке основания, то есть два варианта – песчанно-щебеночное основание или бетонная стяжка. Второй вариант более дорогостоящий.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по искусственному декоративному камню</h2>
+  <div class="accordion" id="ik">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ik1" aria-expanded="false" aria-controls="ik1">
+          Можно ли ваш декоративный камень использовать для наружного применения?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="ik1" class="accordion-collapse collapse" data-bs-parent="#ik">
+        <div class="accordion__body">
+          <p>Да, наш камень можно использовать как для наружного, так и внутреннего применения. Мы производим его на основе белого цемента.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по оборудованию</h2>
+  <div class="accordion" id="equipment">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#equipment1" aria-expanded="false" aria-controls="equipment1">
+          Как правильно выбрать бетоносмеситель?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="equipment1" class="accordion-collapse collapse" data-bs-parent="#equipment">
+        <div class="accordion__body">
+          <p>Для производства качественной плитки необходимо использовать <strong>бетоносмесители принудительного действия</strong>. В гравитационных бетоносмесителях плохой промес, в них смесь «падает пласт на пласт», в результате получается смесь завоздушенная и неоднородная, что отрицательно сказывается на качестве бетона.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#equipment2" aria-expanded="false" aria-controls="equipment2">
+          Как правильно выбрать размер вибростола?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="equipment2" class="accordion-collapse collapse" data-bs-parent="#equipment">
+        <div class="accordion__body">
+          <p>Для удобства работы наша организация производит вибростолы стандартных размеров 800*1200*800 мм. Данные габариты очень удобны и практичны. Одновременно на таком вибростоле можно вибрировать один квадратный метр плитки, и работать могут четыре человека, не мешая друг другу.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по пигментам и пластификаторам</h2>
+  <div class="accordion" id="chemistry">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chemistry1" aria-expanded="false" aria-controls="chemistry1">
+          Продаете ли вы пигменты на развес?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="chemistry1" class="accordion-collapse collapse" data-bs-parent="#chemistry">
+        <div class="accordion__body">
+          <p>Да. Наша компания продает пигменты на развес. Вы можете приобрести пигменты, расфасованные в пластиковую тару по 5 кг (красный, коричневый) и 3 кг (желтый).</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chemistry2" aria-expanded="false" aria-controls="chemistry2">
+          Какие пигменты выбрать для окрашивания бетона?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="chemistry2" class="accordion-collapse collapse" data-bs-parent="#chemistry">
+        <div class="accordion__body">
+          <p>Качество пигментов зависит от многих факторов, в том числе от производителя. Наиболее качественные пигменты немецкой компании LANXESS, которая является мировым лидером в области производства пигментов для окрашивания бетона. Чуть менее качественнее пигменты чешского производства. Пигменты производителей Китая и России занимают третье место в нашем списке.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chemistry3" aria-expanded="false" aria-controls="chemistry3">
+          Продаете ли вы пластификаторы на развес?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="chemistry3" class="accordion-collapse collapse" data-bs-parent="#chemistry">
+        <div class="accordion__body">
+          <p>Да. Наша компания продает пластификаторы на развес. Вы можете приобрести пластификаторы, расфасованные в пластиковую тару по 5 кг.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Вопросы по формам для производства тротуарной плитки и декоративного камня</h2>
+  <div class="accordion" id="forms">
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forms1" aria-expanded="false" aria-controls="forms1">
+          Где можно посмотреть и купить формы?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="forms1" class="accordion-collapse collapse" data-bs-parent="#forms">
+        <div class="accordion__body">
+          <p>Формы вы можете посмотреть и сразу купить в нашем офисе г. Самара, ул. Авроры, д.137, 1 этаж.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forms2" aria-expanded="false" aria-controls="forms2">
+          Чем ваши формы из АВС-пластика отличаются от обычных пластиковых форм?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="forms2" class="accordion-collapse collapse" data-bs-parent="#forms">
+        <div class="accordion__body">
+          <p>Произведенные нашей компанией пластиковые формы не требуют смазки. При распалубки форм, нет необходимости замачивать их в горячей воде, применять дополнительный вибростол. Плитка, произведенная на наших формах, может иметь как глянцевую, так и матовую поверхность. Формы имеют хорошую геометрию. По желанию заказчика, мы можем изготовить формы с тесненной поверхностью: шагрень, кожа и т.д. Срок службы наших форм 400-500 циклов.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forms3" aria-expanded="false" aria-controls="forms3">
+          Почему на полиуретановые формы такая цена?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="forms3" class="accordion-collapse collapse" data-bs-parent="#forms">
+        <div class="accordion__body">
+          <p>Мы производим и сами используем формы из высококачественного полиуретана производства США. Материал дорогой, покупаем его за доллары. Но данный материал очень качественный. Тиражийность форм - несколько тысяч циклов, не требуют смазки, не дают усадку. Мы производим большой ассортимент форм, в том числе и не дорогие.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forms4" aria-expanded="false" aria-controls="forms4">
+          Вы продаете формы оптом или можно приобрести поштучно?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="forms4" class="accordion-collapse collapse" data-bs-parent="#forms">
+        <div class="accordion__body">
+          <p>Формы можно приобрести от 1 штуки.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion__item">
+      <h3 class="accordion__header">
+        <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#forms5" aria-expanded="false" aria-controls="forms5">
+          У вас есть тонкие формы для гипса?
+        </button>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 8H0V6H6V0H8V6H14V8H8V14H6V8Z" fill="#2A2E3A"/>
+        </svg>
+      </h3>
+      <div id="forms5" class="accordion-collapse collapse" data-bs-parent="#forms">
+        <div class="accordion__body">
+          <p>Да. В наличии имеются более тонкие формы из поливилпласта. Их можно применять для работы с гипсом.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-align-center"><button type="button" class="btn btn-success">Получить консультацию</button></p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ parent() }}
+  <script type="module" src="/src/pages/questions.js"></script>
+{% endblock %}

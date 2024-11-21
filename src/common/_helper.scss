@@ -7,8 +7,21 @@
   text-align: justify;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .nowrap {
   text-wrap: nowrap;
+}
+
+// Color 
+.text-success {
+  color: $text-success;
+}
+
+.text-danger {
+  color: $text-danger;
 }
 
 // Grid
