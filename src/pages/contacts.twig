@@ -1,0 +1,55 @@
+{% extends 'layouts/one-column.twig' %}
+{% set title = 'Контакты' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/contacts.scss">
+{% endblock %}
+
+{% block content %}
+<h1>Контакты</h1>
+<div class="contacts-block">
+  <div class="row">
+    <div class="col">
+      <address>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <p>
+            <strong><span itemprop="name">Флаг стоун</span></strong>
+          </p>
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Адрес офиса:</strong> <span itemprop="postalCode">443067</span>,
+            <span itemprop="addressLocality">Самара</span>, <span itemprop="streetAddress">ул. Авроры 137</span>
+          </div>
+          <div>
+            <strong>Тел:</strong> <a href="tel:88462000804"><span itemprop="telephone">8 (846) 200 08 04</span></a>
+          </div>
+          <div class="utm-hide-elem">
+            <strong>Бесплатный телефон для регионов:</strong> <a href="tel:88003021135" class="text-success"><strong><span itemprop="telephone">8 800 302 11 35</span></a></strong>
+          </div>
+          <div class="utm-hide-elem">
+            <strong>Моб:</strong> <a href="tel:89272048887"><span itemprop="telephone">8 927 204 88 87</span></a> (<span class="icon-viber">Viber</span>, <span class="icon-whatsapp">WhatsApp</span>), <a class="utm-hide-element" href="tel:89277072877"><span itemprop="telephone">8 927 707 28 77</span></a>
+          </div>
+          <div>
+            <strong>E-mail:</strong> <a class="email" href="mailto:flagston@mail.ru"><span itemprop="email">flagston@mail.ru</span></a>
+          </div>
+          <h3>Режим работы офиса:</h3>
+          <p>понедельник – пятница с 9.00 до 17.30<br>суббота с 10.00 до 14.00 (о работе в субботние дни уточняйте по телефону).</p>
+          <p>Ген. директор Туров Анатолий Витальевич<br>Главный бухгалтер Каримова Лилия Абузяровна.</p>
+          <h3>Реквизиты компании ООО «ПКФ  «Флаг стоун Арт»</h3>
+          <div>
+            ИНН 6330060224<br>
+            КПП 633001001<br>
+            ОГРН 1146330000046<br>
+            Поволжский банк ОАО «Сбербанк России» г. Самара Самарское отделение №6991<br>
+            Р/с 40702810754400028962<br>
+            К/с 30101810200000000607<br>
+            БИК 043601607
+          </div>
+        </div>
+      </address>
+    </div>
+    <div class="col">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8J8JkCKwy9W1_Vr42q0ObbemFQqCse-6&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+  </div>
+</div>
+{% endblock %}
