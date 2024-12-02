@@ -27,7 +27,7 @@ const swiperOption = {
 const swiper = new Swiper('.swiper', swiperOption);
 // const mask = IMask(phoneInput, maskOptions);
 
-const table = document.querySelector('.product-info .table');
+const table = document.querySelector('.table');
 if (table) {
   let wrapper = document.createElement('div');
   let parent = table.parentElement;

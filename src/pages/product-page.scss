@@ -34,3 +34,9 @@
 @import '@/components/delivery-info/delivery-info.scss';
 @import '@/components/payment-methods/payment-methods.scss';
 @import '@/components/certificates/certificates.scss';
+
+.breadcrumbs {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
