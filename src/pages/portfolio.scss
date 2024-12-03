@@ -13,35 +13,61 @@
 @import '@/components/swiper/swiper.scss';
 @import '@/components/main/main.scss';
 @import '@/components/breadcrumbs/breadcrumbs.scss';
+@import '@/components/product-card/product-card-lg.scss';
+@import '@/components/catalog-items/catalog-items.scss';
+@import '@/components/btn/btn.scss';
 
-.swiper {
-  background-color: $blue-dark;
-  max-width: 800px;
-  margin-left: 0;
-}
+.catalog-items {
 
-.swiper-slide {
-  img {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+  @media screen and (max-width: $mobile) {
+    margin-left: -$col-padding;
+    margin-right: -$col-padding;
+    gap: 0;
+
+    .product-card-lg {
+      border-radius: 0;
+
+      &__photos {
+        border-radius: 0;
+      }
+
+      .btn {
+        height: 40px;
+        font-size: 15px;
+      }
+    }
   }
 }
 
-.portfolio__place,
-.portfolio__year {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bold;
+// Стили для карточки работы
+// .swiper {
+//   background-color: $blue-dark;
+//   max-width: 800px;
+//   margin-left: 0;
+// }
 
-  svg {
-    width: 16px;
-  }
-}
+// .swiper-slide {
+//   img {
+//     display: block;
+//     width: 100%;
+//     max-width: 800px;
+//     margin: 0 auto;
+//   }
+// }
 
-.portfolio__photo,
-.portfolio__place {
-  margin-bottom: $col-padding;
-}
+// .portfolio__place,
+// .portfolio__year {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   font-weight: bold;
+
+//   svg {
+//     width: 16px;
+//   }
+// }
+
+// .portfolio__photo,
+// .portfolio__place {
+//   margin-bottom: $col-padding;
+// }

@@ -35,8 +35,11 @@
 @import '@/components/payment-methods/payment-methods.scss';
 @import '@/components/certificates/certificates.scss';
 
-.breadcrumbs {
-  @media screen and (max-width: $mobile) {
-    display: none;
+.product-page {
+  .breadcrumbs {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
   }
 }
+

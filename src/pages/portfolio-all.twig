@@ -1,0 +1,21 @@
+{% extends 'layouts/one-column.twig' %}
+{% set title = 'Портфолио' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/pages/portfolio.scss">
+{% endblock %}
+
+{% block content %}
+{% include '/components/breadcrumbs/breadcrumbs.twig' %}
+<h1>Примеры работ</h1>
+<div class="catalog-items">
+  {% for i in 0..10 %}
+    {% include '/components/product-card/product-card-portfolio.twig' %}
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ parent() }}
+  <script type="module" src="/src/pages/portfolio.js"></script>
+{% endblock %}
