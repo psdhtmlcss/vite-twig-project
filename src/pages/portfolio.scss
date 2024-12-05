@@ -5,6 +5,7 @@
 @import '@/components/products-nav/products-nav.scss';
 @import '@/components/ratings-block/ratings-block.scss';
 @import '@/components/footer/footer.scss';
+@import '@/components/mobile-fixed-panel/mobile-fixed-panel.scss';
 // Libraries
 @import '@nm/swiper/swiper';
 @import '@nm/swiper/modules/pagination';
@@ -18,6 +19,10 @@
 @import '@/components/btn/btn.scss';
 
 .catalog-items {
+
+  .swiper-slide {
+    line-height: 0;
+  }
 
   @media screen and (max-width: $mobile) {
     margin-left: -$col-padding;
