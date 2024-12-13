@@ -1,19 +1,11 @@
 // Base
-@import '@/common/common.scss';
-@import '@/layouts/one-column.scss';
-@import '@/components/page/page.scss';
-@import '@/components/btn/btn.scss';
-@import '@/components/form-control/form-control.scss';
-@import '@/components/container/container.scss';
-@import '@/components/header/header.scss';
-@import '@/components/products-nav/products-nav.scss';
-@import '@/components/ratings-block/ratings-block.scss';
-@import '@/components/footer/footer.scss';
+@import '@/components/base.scss';
 // Libraries
 @import '@nm/swiper/swiper';
 @import '@nm/swiper/modules/pagination';
 @import '@nm/swiper/modules/navigation';
-
+// Other
+@import '@/layouts/one-column.scss';
 @import '@/components/main-slider/main-slider.scss';
 @import '@/components/section/section.scss';
 
