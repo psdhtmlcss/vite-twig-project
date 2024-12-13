@@ -2,7 +2,7 @@
 {% set title = 'Типовая текстовая страница' %}
 
 {% block styles %}
-  <link rel="stylesheet" href="/src/pages/education.scss">
+  <link rel="stylesheet" href="/src/pages/text.scss">
 {% endblock %}
 
 {% block content %}
@@ -10,6 +10,10 @@
 {# Drupal markup #}
 <h1>Заголовок H1</h1>
 {# END Drupal markup #}
+
+{# Drupal webform #}
+{% include '/components/form-feedback/form-feedback-drupal.twig' %}
+{# End Drupal webform #}
 
 <p><a href="">Lorem ipsum dolor sit amet consectetur</a>, adipisicing elit. Dolore quidem iste architecto veritatis dolorum accusantium dignissimos, impedit magnam ipsum, odio ad eligendi cumque aspernatur saepe, laborum earum inventore. Unde, expedita?</p>
 <h2>Заголовок H2</h2>

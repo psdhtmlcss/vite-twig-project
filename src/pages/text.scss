@@ -1,7 +1,6 @@
 // Base
 @import '@/common/common.scss';
 @import '@/components/page/page.scss';
-@import '@/components/btn/btn.scss';
 @import '@/components/form-control/form-control.scss';
 @import '@/components/container/container.scss';
 @import '@/components/header/header.scss';
@@ -11,3 +10,11 @@
 @import '@/components/mobile-fixed-panel/mobile-fixed-panel.scss';
 @import '@/components/main/main.scss';
 @import '@/components/breadcrumbs/breadcrumbs.scss';
+
+@import '@/components/form-feedback/form-feedback-drupal.scss';
+
+@import '@/components/btn/btn.scss';
+@import '@/components/form-control/form-control.scss';
+@import '@/components/input-group/input-group.scss';
+@import '@/components/form-label/form-label.scss';
+
