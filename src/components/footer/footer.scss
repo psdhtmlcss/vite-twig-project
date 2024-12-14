@@ -4,11 +4,13 @@
 
 .footer {
 
-  &-padding-bottom {
-    @media screen and (max-width: $mobile) {
-      padding-bottom: 161px;
-    }
-  }
+  padding-bottom: 141px;
+
+  // &-padding-bottom {
+  //   @media screen and (max-width: $mobile) {
+  //     padding-bottom: 161px;
+  //   }
+  // }
 
   &__nav {
     padding: $gap 0;
