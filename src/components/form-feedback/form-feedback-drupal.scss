@@ -12,6 +12,12 @@
     margin: 0;
     border: 0;
 
+    &.error {
+      legend {
+        color: $red;
+      }
+    }
+
     legend {
       display: block;
       font-weight: 700;
@@ -73,17 +79,17 @@
 
       
 
-      &[for="edit-communication-method-radios-call-method"]:before {
+      &[for*="edit-communication-method-radios-call-method"]:before {
         background-image: url("../../img/icons/call.svg");
         @include bg-settings-form-feedback();
       }
 
-      &[for="edit-communication-method-radios-whatsapp-method"]:before {
+      &[for*="edit-communication-method-radios-whatsapp-method"]:before {
         background-image: url("../../img/icons/whatsapp.svg");
         @include bg-settings-form-feedback();
       }
 
-      &[for="edit-communication-method-radios-telegram-method"]:before {
+      &[for*="edit-communication-method-radios-telegram-method"]:before {
         background-image: url("../../img/icons/telegram.svg");
         @include bg-settings-form-feedback();
       }
@@ -106,6 +112,7 @@
   }
 
   &__privacy {
+    margin-top: 15px;
     text-align: center;
     padding-bottom: 15px;
     font-size: 14px;

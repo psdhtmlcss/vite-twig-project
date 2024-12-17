@@ -9,4 +9,9 @@
   &:focus {
     outline: none;
   }
+
+  &.error {
+    border-color: $red;
+    background-color: rgba($red, 0.1);
+  }
 }

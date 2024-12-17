@@ -3,14 +3,10 @@
 @import "scss/footer-copyright/footer-copyright";
 
 .footer {
-
-  padding-bottom: 141px;
-
-  // &-padding-bottom {
-  //   @media screen and (max-width: $mobile) {
-  //     padding-bottom: 161px;
-  //   }
-  // }
+  
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 141px;
+  }
 
   &__nav {
     padding: $gap 0;

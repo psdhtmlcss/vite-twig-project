@@ -4,20 +4,22 @@
 @import '@/components/accordion/accordion.scss';
 @import '@/components/table/table.scss';
 
-.accordion {
-  border-radius: $border-radius;
-
-  &__header {
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.questions {
+  .accordion {
+    border-radius: $border-radius;
+  
+    &__header {
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    &__button {
+      font-size: 18px;
+    }
   }
-
-  &__button {
-    font-size: 18px;
+  
+  .btn-success {
+    margin-top: 30px;
   }
-}
-
-.btn-success {
-  margin-top: 30px;
 }

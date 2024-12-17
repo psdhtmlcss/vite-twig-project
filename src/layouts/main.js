@@ -7,6 +7,6 @@ const maskOptions = {
   mask: '+{7}(000)000-00-00'
 };
 
-const phoneInput = document.querySelector('#edit-phone-number');
+const phoneInput = document.querySelector('.js-phone-input');
 const mask = IMask(phoneInput, maskOptions);
 
