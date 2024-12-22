@@ -10,6 +10,11 @@
   {% include '../components/header/header.twig' %}
   {% include '../components/products-nav/products-nav.twig' %}
   <div class="page__content">
+    <aside class="page__banner">
+      <div class="container">
+        {% include '../components/banner-new-year/banner-new-year.twig' %}
+      </div>
+    </aside>
     <div class="container">
       <main class="page__main main">{% block content %}{% endblock %}</main>
     </div>

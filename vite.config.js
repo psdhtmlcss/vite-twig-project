@@ -2,12 +2,9 @@ import vituum from 'vituum'
 import twig from '@vituum/vite-plugin-twig'
 import path, { resolve } from 'path'
 import Inspect from 'vite-plugin-inspect'
-import { defineConfig, loadEnv } from 'vite';
 
-
-console.log('env', import.meta.env);
 export default {
-  // base: '/vite-twig-project/',
+  // base: process.env.NODE_ENV === 'development' ? './' : '/vite-twig-project/',
   base: './',
   plugins: [
     Inspect(),

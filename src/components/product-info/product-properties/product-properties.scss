@@ -11,5 +11,9 @@
     align-items: center;
     gap: 10px;
     font-weight: bold;
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 }

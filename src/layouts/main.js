@@ -8,5 +8,8 @@ const maskOptions = {
 };
 
 const phoneInput = document.querySelector('.js-phone-input');
-const mask = IMask(phoneInput, maskOptions);
+if (phoneInput) {
+  const mask = IMask(phoneInput, maskOptions);
+}
+
 

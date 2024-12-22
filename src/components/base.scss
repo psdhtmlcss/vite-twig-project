@@ -18,3 +18,10 @@
 @import '@/components/form-control/form-control.scss';
 @import '@/components/input-group/input-group.scss';
 @import '@/components/form-label/form-label.scss';
+// New year banner
+@import '@/components/banner-new-year/banner-new-year.scss';
+// Quiz
+#block-flagstone-kvizdlyatrotuarnoyplitki,
+#block-quiz-ik {
+  margin-top: 30px;
+}
