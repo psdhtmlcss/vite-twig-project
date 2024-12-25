@@ -155,11 +155,16 @@
 }
 
 .certificates {
+  .row {
+    gap: 15px;
+  }
+
   img {
     display: block;
     width: 100%;
     max-width: $xs;
     height: auto;
+    max-height: 259px;
   }
 }
 
