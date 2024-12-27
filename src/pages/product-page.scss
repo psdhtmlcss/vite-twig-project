@@ -28,7 +28,9 @@
 
 .product-page {
   .page__banner {
-    margin-top: 30px;
+    @media screen and (max-width: $mobile) {
+      margin-top: 30px;
+    }
   }
 }
 

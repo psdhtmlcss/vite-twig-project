@@ -55,7 +55,7 @@
 .videos-section {
   background-color: $white;
 
-  video {
+  video, iframe {
     margin: 0 auto;
     width: 600px;
     display: block;

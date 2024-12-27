@@ -167,41 +167,20 @@
         <h2>ТВ проекты</h2>
         <div class="videos">
           <div class="videos__item">
-            <video controls poster="">
-              <source src="" type="video/webm">
-              Ваш браузер не поддерживает встроенные видео :(
-            </video>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-178497959&id=456239025&hd=1" width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
             <p>Тротуарная плитка в Самаре. Компания «Флаг стоун»</p>
           </div>
           <div class="videos__item">
-            <video controls poster="">
-              <source src="" type="video/webm">
-              Ваш браузер не поддерживает встроенные видео :(
-            </video>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-178497959&id=456239021&hd=1" width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
             <p>Искусственный камень в Самаре. Компания Флаг стоун</p>
           </div>
           <div class="videos__item">
-            <video controls poster="">
-              <source src="" type="video/webm">
-              Ваш браузер не поддерживает встроенные видео :(
-            </video>
-            <p>Искусственный камень в Самаре. Компания Флаг стоун</p>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-178497959&id=456239021&hd=1" width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+            <p>Формы для тротуарной плитки и искусственного камня в Самаре. Компания Флаг стоун</p>
           </div>
         </div>
       </div>
-      <div class="about-company__block certificates" id="certificates">
-        <h2>Сертификаты</h2>
-        <div class="row">
-          <figure>
-            <a class="border" href="/sites/default/files/certificates/quality_certificate_2024.pdf" target="newtab"><img src="/src/img/quality_certificate_2024.webp" alt="Сертификат соответствия"></a>
-            <figcaption>2024 год</figcaption>
-          </figure>
-          <figure>
-            <a class="border" href="/sites/default/files/certificates/quality_certificate_2023.pdf" target="newtab"><img src="/src/img/quality_certificate_2023.webp" alt="Сертификат соответствия"></a>
-            <figcaption>2023 год</figcaption>
-          </figure>
-        </div>
-      </div>
+      {% include '/components/block-certificates/block-certificates.twig' %}
       <div class="about-company__block reviews" id="reviews">
         <h2>Отзывы</h2>
         <div class="panel">

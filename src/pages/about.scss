@@ -8,6 +8,7 @@
 @import '@/components/panel/panel.scss';
 @import '@/components/check-list/check-list.scss';
 @import '@/components/timeline/timeline.scss';
+@import '@/components/block-certificates/block-certificates.scss';
 
 .left-nav {
   position: sticky;
@@ -141,7 +142,8 @@
       }
     }
 
-    video {
+    video,
+    iframe {
       margin-bottom: 15px;
       display: block;
       width: 100%;
@@ -151,20 +153,6 @@
     p {
       font-weight: 700;
     }
-  }
-}
-
-.certificates {
-  .row {
-    gap: 15px;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    max-width: $xs;
-    height: auto;
-    max-height: 259px;
   }
 }
 

@@ -25,11 +25,20 @@
     }
   }
 
-  video {
+  video,
+  iframe {
     display: block;
     width: 100%;
-    height: auto;
+    height: 600px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $tablet) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      height: 250px;
+    }
   }
 
   .download-price {

@@ -16,6 +16,7 @@
 @import '@/components/landing-page/landing-page.scss';
 @import '@/components/company-advantages/company-advantages.scss';
 @import '@/components/catalog-block/catalog-block.scss';
+@import '@/components/videos/videos.scss';
 
 .jumbotron {
   background: url("@/img/main-page/main-slider__item-0.webp") bottom center no-repeat;
@@ -71,28 +72,6 @@
 
   &__products-category {
     margin-top: 30px;
-  }
-}
-
-.videos {
-  display: flex;
-  gap: $gap;
-
-  @media screen and (max-width: $s) {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  &__item {
-    width: calc(50% - 15px);
-
-    @media screen and (max-width: $s) {
-      width: 100%;
-    }
-
-    video {
-      width: 100%;
-    }
   }
 }
 

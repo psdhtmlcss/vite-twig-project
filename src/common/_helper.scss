@@ -29,6 +29,14 @@
   display: flex;
 }
 
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
 // Collapse
 .collapse:not(.show) {
   display: none;
