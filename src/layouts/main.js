@@ -8,8 +8,21 @@ const maskOptions = {
 };
 
 const phoneInput = document.querySelector('.js-phone-input');
+const feedbackModalElement = document.getElementById('feedbackModal');
+
+let mask;
+
 if (phoneInput) {
-  const mask = IMask(phoneInput, maskOptions);
+  mask = IMask(phoneInput, maskOptions);
 }
+
+feedbackModalElement.addEventListener('show.bs.modal', evt => {
+  let heading = feedbackModalElement.querySelector('.modal-title');
+  heading.textContent = evt.relatedTarget.innerText;
+})
+
+feedbackModalElement.addEventListener('shown.bs.modal', evt => {
+  phoneInput.focus();
+})
 
 
