@@ -30,7 +30,10 @@
     }
 
     &__title {
-
+      display: block!important;
+      margin: 0!important;
+      font-size: 18px;
+      font-weight: normal;
       span {
         display: none;
       }
